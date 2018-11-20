@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hurtig navn\\Desktop\\4. Semester\\I4SWT\\SWT2\\NYHandin2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Hurtig navn\\Desktop\\4. Semester\\I4SWT\\SWT2\\NYHandin2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectPath": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "packagesPath": "C:\\Users\\Hurtig navn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hurtig navn\\Desktop\\4. Semester\\I4SWT\\SWT2\\NYHandin2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
