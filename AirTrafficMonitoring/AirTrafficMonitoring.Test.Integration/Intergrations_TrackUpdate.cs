@@ -10,14 +10,11 @@ namespace AirTrafficMonitoring.Test.Integration
     [TestFixture]
     public class Intergrations_TrackUpdate
     {
-        //private List<ITrackData> _trackData;
-        private ITrackData _trackData; //trackrendition
+        private ITrackData _trackData;
         private IVicinityData _eventRendition; //eventrendition
         private IDetectVicinity _proximityDetection;
         private IVicinityData _proximityDetectionData;
         private IUpdateTrack _trackUpdate;
-        //private ITrackData _track1;
-        //private ITrackData _track2;
         private ITrackData _fakeTrackDataValid1;
         private ITrackData _fakeTrackDataValid2;
         private List<ITrackData> _fakeTrackDataList;
@@ -25,9 +22,7 @@ namespace AirTrafficMonitoring.Test.Integration
         [SetUp]
         public void SetUp()
         {
-            // _trackData = new List<ITrackData>();  //elementerne i listen skal subtitutes
-            //_filtering = Substitute.For<IFiltering>();
-
+  
             _trackData = Substitute.For<ITrackData>();
             _eventRendition = Substitute.For<IVicinityData>();
             _proximityDetectionData = Substitute.For<IVicinityData>();
@@ -41,7 +36,7 @@ namespace AirTrafficMonitoring.Test.Integration
 
             _fakeTrackDataValid1 = new TrackData
             {
-                Tag = "JAS002",
+                Tag = "DEEP4072s",
                 X = 50000,
                 Y = 50000,
                 Altitude = 12000,
@@ -62,7 +57,16 @@ namespace AirTrafficMonitoring.Test.Integration
             };
 
 
+        }
 
+        [Test]
+        public void UpdateSeperation_EventTrue_DataPrinted()
+        {
+            _fakeTrackDataList.Add(_fakeTrackDataValid1);
+            _fakeTrackDataList.Add(_fakeTrackDataValid2);
+            _trackUpdate.Update(_fakeTrackDataList);
+
+            _eventRendition.Received().PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "DEEPS002"));// J5S002
         }
 
 
