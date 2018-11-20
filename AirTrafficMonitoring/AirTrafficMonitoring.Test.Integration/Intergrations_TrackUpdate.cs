@@ -66,7 +66,7 @@ namespace AirTrafficMonitoring.Test.Integration
             _fakeTrackDataList.Add(_fakeTrackDataValid2);
             _trackUpdate.Update(_fakeTrackDataList);
 
-            _eventRendition.Received().PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "DEEPS002"));// J5S002
+            _eventRendition.Received().PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "J5S002"));// J5S002
         }
 
 

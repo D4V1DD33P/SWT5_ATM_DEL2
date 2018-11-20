@@ -1793,10 +1793,11 @@
       ]
     },
     "System.Linq.Queryable/4.3.0": {
-      "sha512": "In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "sha512": "XeuhzDnMp4nqUkeW4c5ILsKQk4+15RVaHm8LQdKWiGqIAgC12y2vuJUkkNhqjqi3K6LNmV9tzEfAZrarwWMsKA==",
       "type": "package",
       "path": "system.linq.queryable/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -3109,31 +3110,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ejer\\.nuget\\packages\\": {},
+    "C:\\Users\\Danny\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\TeamSWT5-ATM2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "packagesPath": "C:\\Users\\Hurtig navn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hurtig navn\\Desktop\\SWT\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "packagesPath": "C:\\Users\\Ejer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
->>>>>>> c415864e2349b4b059629ff7049d9bd88bb1a826
+      "projectPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\TeamSWT5-ATM2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\TeamSWT5-ATM2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ejer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3179,5 +3172,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\TeamSWT5-ATM2\\AirTrafficMonitoring\\ATMLibrary\\obj\\ATMLibrary.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
