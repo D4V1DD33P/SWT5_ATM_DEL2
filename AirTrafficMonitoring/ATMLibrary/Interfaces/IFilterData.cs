@@ -12,6 +12,6 @@ namespace ATMLibrary
         int _maxAltitude { get; set; }
 
         void ConfirmTracks(List<ITrackData> trackData);
-
+        void LeftAirspace(List<ITrackData> trackData); // Hurtig tilføjelse 
     }
 }

@@ -43,6 +43,7 @@ namespace ATMLibrary
                 listOfTracks.Add(Parsing(data));
             }
             _filter.ConfirmTracks(listOfTracks);
+            _filter.LeftAirspace(listOfTracks);
         }
     }
 }
