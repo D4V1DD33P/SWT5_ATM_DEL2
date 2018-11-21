@@ -6,7 +6,7 @@ namespace ATMLibrary
    public class DetectVicinity : IDetectVicinity
     {
         private int _HS = 5000; //Horisontal seperation < 5000 m
-        private int _VS = 300; //Vertikal seperation < 300 m
+        private int _VS = 250; //Vertikal seperation < 300 m
 
         private readonly IVicinityData _detectedVicinityData, _renderEvent;
         private readonly List<IVicinityData> _detectedVicinityDatas;
@@ -19,9 +19,9 @@ namespace ATMLibrary
             _detectedVicinityDatas = new List<IVicinityData>();
         }
 
-        public DetectVicinity()
-        {
-        }
+        //public DetectVicinity()
+        //{
+        //}
 
         public void checkVicinity(List<ITrackData> listOfTrackInfo)
         {
