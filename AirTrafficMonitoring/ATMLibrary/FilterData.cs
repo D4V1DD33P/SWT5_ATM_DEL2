@@ -13,9 +13,9 @@ namespace ATMLibrary
         public int _minAltitude { get; set; }
         public int _maxAltitude { get; set; }
 
-        public FilterData()
-        {
-        }
+        //public FilterData()
+        //{
+        //}
 
         public FilterData(IUpdateTrack trackUpdate)
         {
