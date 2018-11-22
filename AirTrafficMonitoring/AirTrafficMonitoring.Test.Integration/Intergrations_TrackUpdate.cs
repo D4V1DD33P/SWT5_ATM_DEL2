@@ -17,6 +17,8 @@ namespace AirTrafficMonitoring.Test.Integration
         private IUpdateTrack _updateTrack;
         private ITrackData _creatingfakeTrackData1;
         private ITrackData _creatingfakeTrackData2;
+        private ITrackData _creatingfakeTrackData3;
+        private ITrackData _creatingfakeTrackData4;
         private List<ITrackData> _creatingfakeTrackDataList;
 
         [SetUp]
@@ -44,14 +46,15 @@ namespace AirTrafficMonitoring.Test.Integration
 
             _creatingfakeTrackData2 = new TrackData
             {
-                Tag = "J5S002",
+                Tag = "J5S004",
                 X = 50100,
                 Y = 50100,
                 Altitude = 12000,
                 Course = 0,
-                Timestamp = new DateTime(2018, 05, 13, 10, 50, 35),
+                Timestamp = new DateTime(2018, 11, 22, 10, 50, 35),
                 Speed = 0
             };
+
         }
 
         [Test]
@@ -61,7 +64,7 @@ namespace AirTrafficMonitoring.Test.Integration
             _creatingfakeTrackDataList.Add(_creatingfakeTrackData2);
             _updateTrack.Update(_creatingfakeTrackDataList);
 
-            _eventRendition.Received().PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "J5S002"));// J5S002
+            _eventRendition.Received().PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "J5S004"));
         }
 
         [Test]
