@@ -13,7 +13,7 @@ namespace AirTrafficMonitoring.Test.Integration
         private ITrackData _trackData;
         private IVicinityData _eventRendition; //eventrendition
         private IDetectVicinity _proximityDetection;
-        private IVicinityData _proximityDetectionData;
+        private IVicinityData _vicinityData;
         private IUpdateTrack _trackUpdate;
         private ITrackData _fakeTrackDataValid1;
         private ITrackData _fakeTrackDataValid2;
@@ -25,8 +25,8 @@ namespace AirTrafficMonitoring.Test.Integration
   
             _trackData = Substitute.For<ITrackData>();
             _eventRendition = Substitute.For<IVicinityData>();
-            _proximityDetectionData = Substitute.For<IVicinityData>();
-            _proximityDetection = new DetectVicinity(_eventRendition, _proximityDetectionData);
+            _vicinityData = Substitute.For<IVicinityData>();
+            _proximityDetection = new DetectVicinity(_eventRendition, _vicinityData);
             //_proximityDetectionData = Substitute.For<IProximityDetectionData>();
             _trackUpdate = new UpdateTrack(_trackData, _proximityDetection);
             //_track1 = Substitute.For<ITrackData>();

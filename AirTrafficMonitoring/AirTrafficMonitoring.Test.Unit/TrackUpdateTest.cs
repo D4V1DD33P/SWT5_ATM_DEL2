@@ -11,24 +11,21 @@ namespace AirTrafficMonitoring.Test.Unit
         [TestFixture]
         public class TrackUpdateTests
         {
-            //private List<ITrackData> _track;
             private ITrackData _track1;
             private ITrackData _track2;
 
-            private List<ITrackData> _trackData;                      //List holds trackdataobjects
-            //private ITrackUpdate _uut;
-            private ITrackData _trackRendition;     //private ITrackRendition _trackRendition;
-            private IDetectVicinity _proximityDetection;      //private IProximityDetection _proximityDetection;
+            private List<ITrackData> _trackData; //List holds trackdataobjects
+            private ITrackData _trackRendition;     
+            private IDetectVicinity _detectVicinity;      
 
             [SetUp]
 
             public void SetUp()
             {
                 _trackRendition = Substitute.For<ITrackData>();
-                _proximityDetection = Substitute.For<IDetectVicinity>();
+                _detectVicinity = Substitute.For<IDetectVicinity>();
 
                 _trackData = new List<ITrackData>();                //initial
-                //_uut=new TrackUpdate(_trackData);
 
                 _track1 = Substitute.For<ITrackData>();
                 _track2 = Substitute.For<ITrackData>();
@@ -43,7 +40,7 @@ namespace AirTrafficMonitoring.Test.Unit
             public void Update_TimeStampOldandNew_returnsEqual()
             {
 
-                var uut = new UpdateTrack(_trackRendition, _proximityDetection);
+                var uut = new UpdateTrack(_trackRendition, _detectVicinity);
                 _trackData.Add(_track1);
                 _trackData.Add(_track2);
 
