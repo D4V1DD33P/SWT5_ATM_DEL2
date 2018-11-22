@@ -95,3 +95,14 @@ C:\Users\Hurtig navn\Desktop\SWT_atm_del2\AirTrafficMonitoring\ATMLibrary\obj\De
 C:\Users\Hurtig navn\Desktop\SWT_atm_del2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CopyComplete
 C:\Users\Hurtig navn\Desktop\SWT_atm_del2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
 C:\Users\Hurtig navn\Desktop\SWT_atm_del2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.deps.json
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.pdb
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\TransponderReceiver.dll
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csprojAssemblyReference.cache
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfoInputs.cache
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfo.cs
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CopyComplete
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Bekir Karaca\Desktop\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb

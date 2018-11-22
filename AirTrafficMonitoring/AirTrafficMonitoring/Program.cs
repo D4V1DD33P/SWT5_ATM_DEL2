@@ -10,7 +10,7 @@ namespace AirTrafficMonitoring
     {
         static void Main(string[] args)
         {
-            string str = "Vent... ";
+            string str = "Vent... ";    // Gets shown when program runs
             ITransponderReceiver transponderDataReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
 
 
