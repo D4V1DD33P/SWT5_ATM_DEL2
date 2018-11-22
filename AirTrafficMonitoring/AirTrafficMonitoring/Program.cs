@@ -25,7 +25,7 @@ namespace AirTrafficMonitoring
             var decoder = new ParseData(transponderDataReceiver, filtering);
 
             Console.WriteLine(str);
-            System.Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }

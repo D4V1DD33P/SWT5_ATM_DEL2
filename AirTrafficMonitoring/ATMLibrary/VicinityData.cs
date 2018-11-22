@@ -13,10 +13,10 @@ namespace ATMLibrary
         public string TagTwo { get; set; }
         public DateTime Timestamp { get; set; }
         public VicinityData()
-        {           
+        {
             Timestamp = DateTime.MinValue;
         }
-        
+
 
         public void LogToFile(List<IVicinityData> proximityDetectionDatas)
         {
