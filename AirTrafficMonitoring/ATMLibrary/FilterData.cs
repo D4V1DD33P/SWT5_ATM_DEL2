@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using ATMLibrary.Interfaces;
 
 namespace ATMLibrary
@@ -36,8 +37,12 @@ namespace ATMLibrary
                 if (track.X >= _minX && track.X <= _maxX && track.Y >= _minY && track.Y <= _maxY)
                 {
                     if (track.Altitude >= _minAltitude && track.Altitude <= _maxAltitude)
-                        myTracks.Add(track);  
-                }        
+                        myTracks.Add(track);
+                }
+                else
+                {
+
+                }
             }
             _trackUpdate.Update(myTracks);
         }
@@ -45,17 +50,22 @@ namespace ATMLibrary
         // Dette er en hurtig tilføjelse 
         public void LeftAirspace(List<ITrackData> trackInfo)
         {
-            List<ITrackData> myTracks = new List<ITrackData>();
+            List<ITrackData> leftTracks = new List<ITrackData>();
             foreach (var track in trackInfo)
             {
                 if (track.X <= _minX || track.X >= _maxX && track.Y <= _minY || track.Y >= _maxY)
                 {
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
-                        myTracks.Add(track);
+                        leftTracks.Add(track);
                 }
             }
-            _trackUpdate.Update(myTracks);
+            
+            _trackUpdate.Update(leftTracks);
         }
 
+        //public void LeftAirspace()
+        //{
+
+        //}
     }
 }
