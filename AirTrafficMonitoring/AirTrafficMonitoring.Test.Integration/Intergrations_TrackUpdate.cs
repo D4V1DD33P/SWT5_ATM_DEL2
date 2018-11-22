@@ -71,7 +71,7 @@ namespace AirTrafficMonitoring.Test.Integration
             _creatingfakeTrackDataList.Add(_creatingfakeTrackData2);
             _updateTrack.Update(_creatingfakeTrackDataList);
 
-            _eventRendition.Received().LogToFile(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "J5S002"));
+            _eventRendition.Received().LogToFile(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "DEEP4072s"));
         }
 
     }
