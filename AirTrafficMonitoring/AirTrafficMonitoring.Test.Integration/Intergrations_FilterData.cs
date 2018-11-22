@@ -47,13 +47,23 @@ namespace AirTrafficMonitoring.Test.Integration
                 Speed = 0
             };
 
+            _creatingFakeTrackData2 = new TrackData
+            {
+                Tag = "JAS002",
+                X = 50100,
+                Y = 50100,
+                Altitude = 12000,
+                Course = 0,
+                Timestamp = new DateTime(2018, 05, 13, 10, 50, 36),
+                Speed = 0
+            };
         }
 
 
         [Test]
         public void ValidateTracks_ValidTracks_PrintsCalculatedVelocity()
         {
-            //Adds fake data to list
+            //Vi tilføjer fake data til listen
             _creatingFakeTrackDataList.Add(_creatingFakeTrackData1);
             _filteringData.ConfirmTracks(_creatingFakeTrackDataList);
 
@@ -64,5 +74,6 @@ namespace AirTrafficMonitoring.Test.Integration
 
             _trackDataRendition.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Tag == "JAS002" && data[0].Speed == (int)141));
         }
+
     }
 }
