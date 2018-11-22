@@ -106,3 +106,14 @@ C:\Users\Hurtig navn\Desktop\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstanda
 C:\Users\Hurtig navn\Desktop\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CopyComplete
 C:\Users\Hurtig navn\Desktop\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
 C:\Users\Hurtig navn\Desktop\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.deps.json
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.pdb
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\TransponderReceiver.dll
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csprojAssemblyReference.cache
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfoInputs.cache
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfo.cs
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CopyComplete
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb

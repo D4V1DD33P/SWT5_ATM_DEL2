@@ -45,7 +45,7 @@ namespace AirTrafficMonitoring.Test.Unit
                 _trackData.Add(_track2);
 
                 uut.Update(_trackData);                     //new list
-                Assert.That(_trackData[0].Timestamp, Is.EqualTo(uut.oldList[0].Timestamp)); //New list is equal to oldList
+                Assert.That(_trackData[0].Timestamp, Is.EqualTo(uut.OldList[0].Timestamp)); //New list is equal to oldList
             }
         }
 }

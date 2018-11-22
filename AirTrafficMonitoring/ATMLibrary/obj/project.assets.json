@@ -3110,23 +3110,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hurtig navn\\.nuget\\packages\\": {},
+    "C:\\Users\\Danny\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "packagesPath": "C:\\Users\\Hurtig navn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hurtig navn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
