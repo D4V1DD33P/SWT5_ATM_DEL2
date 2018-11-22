@@ -26,6 +26,7 @@ namespace ATMLibrary
             _maxAltitude = 20000;
         }
         List<ITrackData> myTracks = new List<ITrackData>();
+        List<ITrackData> yourTracks = new List<ITrackData>();
 
         public void ConfirmTracks(List<ITrackData> trackInfo)
         {
@@ -39,7 +40,7 @@ namespace ATMLibrary
                         myTracks.Add(track);
                     }
                 }
-            }                
+            }
             // Fly forlader Airspace 
             foreach (var track in myTracks)
                 if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY ||
