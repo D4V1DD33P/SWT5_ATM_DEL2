@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace AirTrafficMonitoring.Test.Integration
 {
     [TestFixture]
-    public class Intergrations_TrackUpdate
+    public class Integrations_TrackUpdate
     {
         private ITrackData _trackData;
         private IVicinityData _eventRendition; 

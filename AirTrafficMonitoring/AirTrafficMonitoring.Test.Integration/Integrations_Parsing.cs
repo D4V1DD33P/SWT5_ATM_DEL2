@@ -10,7 +10,7 @@ using TransponderReceiver;
 namespace AirTrafficMonitoring.Test.Integration
 {
     [TestFixture]
-    public class Intergrations_Parsing
+    public class Integrations_Parsing
     {
         private IUpdateTrack _updateTrack;
         private ITrackData _trackData;
@@ -24,7 +24,7 @@ namespace AirTrafficMonitoring.Test.Integration
         private ITrackData _fakeTrackData;
         private List<ITrackData> _fakeTrackList;
 
-        [SetUp]
+        [SetUp]     //SetUp for tests
         public void Setup()
         {
 
