@@ -47,6 +47,17 @@ namespace AirTrafficMonitoring.Test.Integration
                 Speed = 0
             };
 
+            _creatingFakeTrackData2 = new TrackData
+            {
+                Tag = "JAS002",
+                X = 50100,
+                Y = 50100,
+                Altitude = 12000,
+                Course = 0,
+                Timestamp = new DateTime(2018, 05, 13, 10, 50, 36),
+                Speed = 0
+            };
+
         }
 
 
