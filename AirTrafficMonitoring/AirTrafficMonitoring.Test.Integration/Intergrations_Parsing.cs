@@ -79,5 +79,23 @@ namespace AirTrafficMonitoring.Test.Integration
 
         }
 
+
+        [Test]
+        public void ValidTracks_EventRaised_CorrectXValueReceived()
+        {
+            FakeEventRaised();
+            _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].X == 53241));
+        }
+
+
+        [Test]
+        public void ValidTracks_EventRaised_CorrectYValueReceived()
+        {
+            FakeEventRaised();
+            _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Y == 85634));
+        }
+
+
+
     }
 }
