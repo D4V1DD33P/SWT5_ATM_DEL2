@@ -15,8 +15,6 @@ namespace ATMLibrary
         public int _minAltitude { get; set; }
         public int _maxAltitude { get; set; }
 
-        public ITrackData DeepData;
-
         public FilterData(IUpdateTrack trackUpdate)     //Validation of monitored airspace
         {
             _trackUpdate = trackUpdate;
@@ -31,6 +29,7 @@ namespace ATMLibrary
 
         public void ConfirmTracks(List<ITrackData> trackInfo)
         {
+            // Fly er inde i Airspace 
             foreach (var track in trackInfo)
             {
                 if (track.X >= _minX && track.X <= _maxX && track.Y >= _minY && track.Y <= _maxY)
@@ -40,38 +39,16 @@ namespace ATMLibrary
                         myTracks.Add(track);
                     }
                 }
-
+            }                
+            // Fly forlader Airspace 
+            foreach (var track in myTracks)
                 if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY ||
                     track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
-                {   
-                    Console.WriteLine($"Flight OUT of Airspace: {track.Tag} " + $"({track.X}, " + $"{track.Y})" + "\n" + 
-                    $"ALT: {track.Altitude} meters, " + "\n" +
-                        $"VEL: {track.Speed} m/s, " + "\n" +
-                        $"CRS: {track.Course} degrees." );
+                {
+                    Console.WriteLine($"Flight OUT of Airspace: {track.Tag} " + $"({track.X}, " + $"{track.Y})" + "\n" +
+                                      $"ALT: {track.Altitude} meters, " + "\n");
                 }
-            }     
             _trackUpdate.Update(myTracks);
         }
-
-        //// Dette er en hurtig tilføjelse 
-        //public void LeftAirspace(List<ITrackData> trackInfo)
-        //{
-        //    //List<ITrackData> leftTracks = new List<ITrackData>();
-        //    foreach (var track in trackInfo)
-        //    {
-        //        if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY || track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
-        //        {
-        //            Console.WriteLine($"Flight LEFT airspace: {track.Tag}");
-        //            myTracks.Add(track);
-        //            //Console.WriteLine("Hello WOOOOOOOOOOOOOOOOOOOOOOOOOOORLD!");
-        //        }
-        //    }
-        //    _trackUpdate.Update(myTracks);
-        //}
-
-        //public void LeftAirspace()
-        //{
-
-        //}
     }
 }
