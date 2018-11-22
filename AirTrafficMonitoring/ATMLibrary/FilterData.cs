@@ -60,7 +60,7 @@ namespace ATMLibrary
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
                     { 
                         myTracks.Remove(track);
-                        Console.WriteLine("Hello WOOOOOOOOOOOOOOOOOOOOOOOOOOORLD!");
+                        Console.WriteLine("Hello World!")
 
                     }
                 }
