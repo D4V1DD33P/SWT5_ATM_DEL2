@@ -698,10 +698,11 @@
   },
   "libraries": {
     "Castle.Core/4.2.0": {
-      "sha512": "1TtKHYYVfox7aUZ0akCqkULmAjpG8X5ZRzTzTiONY34xtvvaPuUSSdVL1VaF/1/ljRhOkpy+uKOGn6XoFGvorw==",
+      "sha512": "rcFo7UpQh1XHZE+ocyd0oTn/X6uR/mpCcEyCmKNTBab/xnRvrVJnW65s+CP3okxyAXfW3iq7v0aBDtoAbzNEKQ==",
       "type": "package",
       "path": "castle.core/4.2.0",
       "files": [
+        ".signature.p7s",
         "ASL - Apache Software Foundation License.txt",
         "CHANGELOG.md",
         "LICENSE",
@@ -868,10 +869,11 @@
       ]
     },
     "NSubstitute/3.1.0": {
-      "sha512": "Ci9YiqoknyCWTlHiv+lF9MC5CROUlVRjNkLcYbTABhG+d6lYfc/3C4u8qvNnq4n9NhyKllwmLp6DHiBZz3RyYA==",
+      "sha512": "9uvo5E4VEbw1dwLnR/UlPKkdHJIlxj9LKIcjVgyLjEnWaZVTFV8Fygmn7O+pnHIlQrLNPp7Vt+DAsg0ZW9K5ZA==",
       "type": "package",
       "path": "nsubstitute/3.1.0",
       "files": [
+        ".signature.p7s",
         "lib/net45/NSubstitute.dll",
         "lib/net46/NSubstitute.dll",
         "lib/netstandard1.3/NSubstitute.dll",
@@ -3109,23 +3111,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Ejer\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Bekir Karaca\\.nuget\\packages\\": {},
+>>>>>>> a3bfb06840b0317c3ce3ed2a4a9a78407c511457
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
       "projectPath": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "packagesPath": "C:\\Users\\Ejer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ejer\\Desktop\\SWTATM2\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Bekir Karaca\\Desktop\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectName": "ATMLibrary",
+      "projectPath": "C:\\Users\\Bekir Karaca\\Desktop\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "packagesPath": "C:\\Users\\Bekir Karaca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bekir Karaca\\Desktop\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+>>>>>>> a3bfb06840b0317c3ce3ed2a4a9a78407c511457
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Ejer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Bekir Karaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a3bfb06840b0317c3ce3ed2a4a9a78407c511457
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

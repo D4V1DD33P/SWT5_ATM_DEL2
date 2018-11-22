@@ -57,6 +57,10 @@ namespace AirTrafficMonitoring.Test.Integration
                 Timestamp = new DateTime(2018, 05, 13, 10, 50, 36),
                 Speed = 0
             };
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3bfb06840b0317c3ce3ed2a4a9a78407c511457
         }
 
 

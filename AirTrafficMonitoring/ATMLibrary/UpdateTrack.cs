@@ -48,7 +48,6 @@ namespace ATMLibrary
 
             _renderTrack.Print(newList);
             _vicinity.checkVicinity(newList);
-
         }
 
         public int CalSpeed(ITrackData track1, ITrackData track2)

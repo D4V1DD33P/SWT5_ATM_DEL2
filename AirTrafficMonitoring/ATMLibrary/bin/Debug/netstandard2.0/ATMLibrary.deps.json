@@ -578,7 +578,7 @@
     "Castle.Core/4.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1TtKHYYVfox7aUZ0akCqkULmAjpG8X5ZRzTzTiONY34xtvvaPuUSSdVL1VaF/1/ljRhOkpy+uKOGn6XoFGvorw==",
+      "sha512": "sha512-rcFo7UpQh1XHZE+ocyd0oTn/X6uR/mpCcEyCmKNTBab/xnRvrVJnW65s+CP3okxyAXfW3iq7v0aBDtoAbzNEKQ==",
       "path": "castle.core/4.2.0",
       "hashPath": "castle.core.4.2.0.nupkg.sha512"
     },
@@ -606,7 +606,7 @@
     "NSubstitute/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ci9YiqoknyCWTlHiv+lF9MC5CROUlVRjNkLcYbTABhG+d6lYfc/3C4u8qvNnq4n9NhyKllwmLp6DHiBZz3RyYA==",
+      "sha512": "sha512-9uvo5E4VEbw1dwLnR/UlPKkdHJIlxj9LKIcjVgyLjEnWaZVTFV8Fygmn7O+pnHIlQrLNPp7Vt+DAsg0ZW9K5ZA==",
       "path": "nsubstitute/3.1.0",
       "hashPath": "nsubstitute.3.1.0.nupkg.sha512"
     },

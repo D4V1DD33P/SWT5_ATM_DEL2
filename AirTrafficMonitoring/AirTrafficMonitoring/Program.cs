@@ -1,16 +1,16 @@
 ﻿using System;
 using TransponderReceiver;
 using ATMLibrary.Interfaces;
-using  ATMLibrary;
+using ATMLibrary;
 
 
 namespace AirTrafficMonitoring
 {
     class Program
     {
-        static void Main(/*string[] args*/)
+        static void Main(string[] args)
         {
-            string str = "Vent...";
+            string str = "Vent... ";
             ITransponderReceiver transponderDataReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
 
 

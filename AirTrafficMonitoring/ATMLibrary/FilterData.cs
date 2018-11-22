@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using ATMLibrary.Interfaces;
 
@@ -28,39 +29,43 @@ namespace ATMLibrary
             _minAltitude = 500;
             _maxAltitude = 20000;
         }
+        List<ITrackData> myTracks = new List<ITrackData>();
 
         public void ConfirmTracks(List<ITrackData> trackInfo)
         {
-            List<ITrackData> myTracks = new List<ITrackData>();
+            
             foreach (var track in trackInfo)
             {
                 if (track.X >= _minX && track.X <= _maxX && track.Y >= _minY && track.Y <= _maxY)
                 {
                     if (track.Altitude >= _minAltitude && track.Altitude <= _maxAltitude)
+                    { 
                         myTracks.Add(track);
+                        Console.WriteLine("Flight entered airspace");
+                    }
                 }
-                else
-                {
-
-                }
-            }
+            }     
             _trackUpdate.Update(myTracks);
         }
 
         // Dette er en hurtig tilføjelse 
         public void LeftAirspace(List<ITrackData> trackInfo)
         {
-            List<ITrackData> leftTracks = new List<ITrackData>();
+            //List<ITrackData> leftTracks = new List<ITrackData>();
             foreach (var track in trackInfo)
             {
-                if (track.X <= _minX || track.X >= _maxX && track.Y <= _minY || track.Y >= _maxY)
+                if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY)
                 {
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
-                        leftTracks.Add(track);
+                    { 
+                        myTracks.Remove(track);
+                        Console.WriteLine("Hello WOOOOOOOOOOOOOOOOOOOOOOOOOOORLD!");
+
+                    }
                 }
             }
             
-            _trackUpdate.Update(leftTracks);
+            _trackUpdate.Update(myTracks);
         }
 
         //public void LeftAirspace()
