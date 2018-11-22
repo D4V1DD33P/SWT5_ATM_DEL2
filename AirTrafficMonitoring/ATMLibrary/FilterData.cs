@@ -53,14 +53,14 @@ namespace ATMLibrary
         public void LeftAirspace(List<ITrackData> trackInfo)
         {
             //List<ITrackData> leftTracks = new List<ITrackData>();
-            foreach (var track in new ITrackData[])Info)
+            foreach (var track in trackInfo)
             {
                 if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY)
                 {
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
                     { 
                         myTracks.Remove(track);
-                        Console.WriteLine("Hello World!")
+                        Console.WriteLine("Hello World!");
 
                     }
                 }
