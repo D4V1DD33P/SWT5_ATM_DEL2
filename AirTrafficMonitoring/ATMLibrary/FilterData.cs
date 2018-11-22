@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using ATMLibrary.Interfaces;
 
 namespace ATMLibrary
@@ -28,33 +29,38 @@ namespace ATMLibrary
             _maxAltitude = 20000;
         }
 
-        //public void ConfirmTracks(List<ITrackData> trackInfo)
-        //{
-        //    List<ITrackData> myTracks = new List<ITrackData>();
-        //    foreach (var track in trackInfo)
-        //    {
-        //        if (track.X >= _minX && track.X <= _maxX && track.Y >= _minY && track.Y <= _maxY)
-        //        {
-        //            if (track.Altitude >= _minAltitude && track.Altitude <= _maxAltitude)
-        //                myTracks.Add(track);  
-        //        }        
-        //    }
-        //    _trackUpdate.Update(myTracks);
-        //}
+        public void ConfirmTracks(List<ITrackData> trackInfo)
+        {
+            List<ITrackData> myTracks = new List<ITrackData>();
+            foreach (var track in trackInfo)
+            {
+                if (track.X >= _minX && track.X <= _maxX && track.Y >= _minY && track.Y <= _maxY)
+                {
+                    if (track.Altitude >= _minAltitude && track.Altitude <= _maxAltitude)
+                        myTracks.Add(track);
+                }
+                else
+                {
+
+                }
+            }
+            _trackUpdate.Update(myTracks);
+        }
 
         // Dette er en hurtig tilføjelse 
-        public void ConfirmTracks(List<ITrackData> trackLeftInfo)
+        public void LeftAirspace(List<ITrackData> trackInfo)
         {
-            List<ITrackData> deepTracks = new List<ITrackData>();
-            foreach (var track in trackLeftInfo)
+            List<ITrackData> leftTracks = new List<ITrackData>();
+            foreach (var track in trackInfo)
             {
                 if (track.X <= _minX || track.X >= _maxX && track.Y <= _minY || track.Y >= _maxY)
                 {
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
-                        deepTracks.Add(track);
+                        leftTracks.Add(track);
                 }
             }
-            _trackUpdate.Update(deepTracks);
+            
+            _trackUpdate.Update(leftTracks);
         }
 
         //public void LeftAirspace()
