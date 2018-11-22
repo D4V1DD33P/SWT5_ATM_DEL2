@@ -59,7 +59,7 @@ namespace ATMLibrary
                     if (track.Altitude <= _minAltitude || track.Altitude >= _maxAltitude)
                     { 
                         myTracks.Remove(track);
-                        Console.WriteLine("Hello World!");  //  Purpose of this line is a verification that the track is removed
+                        Console.WriteLine("Hello WOOOOOOOOOOOOOOOOOOOOOOOOOOORLD!");
 
                     }
                 }

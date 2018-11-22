@@ -10,6 +10,6 @@ namespace ATMLibrary
 {
     public class EnteredAirspace : IEnteredAirspace
     {
-        //  Missing body
+
     }
 }

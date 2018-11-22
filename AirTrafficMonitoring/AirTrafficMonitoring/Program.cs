@@ -8,7 +8,7 @@ namespace AirTrafficMonitoring
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(/*string[] args*/)
         {
             string str = "Vent... ";
             ITransponderReceiver transponderDataReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
