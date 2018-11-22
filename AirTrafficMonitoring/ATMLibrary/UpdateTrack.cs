@@ -46,7 +46,7 @@ namespace ATMLibrary
             }
 
             _renderTrack.Print(newList);
-            _vicinity.checkVicinity(newList);
+            _vicinity.CheckVicinity(newList);
         }
 
         public int CalSpeed(ITrackData track1, ITrackData track2)
@@ -97,7 +97,7 @@ namespace ATMLibrary
 
             if (dX == 0)
             {
-                //if deltaY er større end 0
+                // if deltaY er større end 0
                 // condition ? first_expression : second_expression;
                 Degree = dY > 0 ? 0 : 180;
             }

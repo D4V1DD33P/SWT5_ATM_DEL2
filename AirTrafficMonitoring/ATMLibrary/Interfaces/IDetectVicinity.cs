@@ -4,7 +4,7 @@ namespace ATMLibrary
 {
     public interface IDetectVicinity
     {
-        void checkVicinity(List<ITrackData> listOfTrackInfo);
+        void CheckVicinity(List<ITrackData> listOfTrackInfo);
          
     }
 }

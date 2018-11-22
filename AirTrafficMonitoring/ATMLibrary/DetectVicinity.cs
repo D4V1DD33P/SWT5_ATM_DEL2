@@ -23,7 +23,7 @@ namespace ATMLibrary
         //{
         //}
 
-        public void checkVicinity(List<ITrackData> listOfTrackInfo)
+        public void CheckVicinity(List<ITrackData> listOfTrackInfo)
         {
             // Tjekker for kollision distance
             foreach (var track1 in listOfTrackInfo)

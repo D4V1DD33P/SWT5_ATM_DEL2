@@ -44,7 +44,7 @@ namespace ATMLibrary
 
         public override string ToString()
         {
-            var str = $"{TagOne}: conflicts with {TagTwo} at {Timestamp}";
+            var str = $"{TagOne}: conflicts with {TagTwo} at {Timestamp}";      //Conflict print
             return str;
 
         }

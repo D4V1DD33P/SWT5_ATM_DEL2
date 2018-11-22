@@ -45,7 +45,7 @@ namespace AirTrafficMonitoring.Test.Unit
         {
             _dataListTrackData.Add(_track1);
             _dataListTrackData.Add(_track2);
-            _uut.checkVicinity(_dataListTrackData);
+            _uut.CheckVicinity(_dataListTrackData);
             _renderEvent.Received()
             .PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
         }

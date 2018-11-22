@@ -23,7 +23,7 @@ namespace AirTrafficMonitoring
             IFilterData filtering = new FilterData(trackUpdate);
 
             var decoder = new ParseData(transponderDataReceiver, filtering);
-            Console.WriteLine("Vent...");
+            Console.WriteLine("Vent...");       //Takes some time to load, depending on computer
             System.Console.ReadLine();
 
         }

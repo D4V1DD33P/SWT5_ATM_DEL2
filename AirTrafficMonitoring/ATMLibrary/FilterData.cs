@@ -17,10 +17,6 @@ namespace ATMLibrary
 
         public ITrackData DeepData;
 
-        //public FilterData()
-        //{
-        //}
-
         public FilterData(IUpdateTrack trackUpdate)
         {
             _trackUpdate = trackUpdate;
