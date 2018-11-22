@@ -17,7 +17,7 @@ namespace ATMLibrary
 
         public ITrackData DeepData;
 
-        public FilterData(IUpdateTrack trackUpdate)
+        public FilterData(IUpdateTrack trackUpdate)     //Validation of monitored airspace
         {
             _trackUpdate = trackUpdate;
             _minX = 10000;

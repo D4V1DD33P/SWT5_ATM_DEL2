@@ -28,7 +28,6 @@ namespace AirTrafficMonitoring.Test.Unit
                 Y = 30000,
                 Altitude = 10000
             };
-            
         }
 
         [Test]

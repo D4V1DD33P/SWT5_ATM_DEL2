@@ -17,7 +17,6 @@ namespace ATMLibrary
             Timestamp = DateTime.MinValue;
         }
 
-
         public void LogToFile(List<IVicinityData> proximityDetectionDatas)
         {
 
