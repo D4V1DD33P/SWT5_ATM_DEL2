@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATMLibrary.TrackRendition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>TrackRendition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.TrackUpdate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAIAAAAAAQAAAAAAgAABAA=</HashCode>
+      <FileName>TrackUpdate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_proximityDetection" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.ProximityDetectionData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAACSAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProximityDetectionData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.TrackData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAEAIAAgAAAAAAAAAAAAAAAAAAEYAA=</HashCode>
+      <FileName>TrackData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.Filtering" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAAAAAAAACAAAAiAAAAAMAAAAAAAAAAACA=</HashCode>
+      <FileName>Filtering.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.EventRendition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>EventRendition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.Parsing" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAIAABBAAAAAAAAAAAA=</HashCode>
+      <FileName>Parsing.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ATMLibrary.ProximityDetection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAUAAAE=</HashCode>
+      <FileName>ProximityDetection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.138" />
+  </Class>
+  <Interface Name="ATMLibrary.IEventRendition" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEventRendition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.IFiltering" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAAAAAAAACAAAAiAAAAAMAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFiltering.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.IParsing" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IParsing.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.IProximityDetection" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Interfaces\IProximityDetection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.ITrackData" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAEAIAAgAAAAAAAAAAAAAAAAAAEYAA=</HashCode>
+      <FileName>Interfaces\ITrackData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.Interfaces.ITrackRendition" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Interfaces\ITrackRendition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.Interfaces.ITrackUpdate" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITrackUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ATMLibrary.Interfaces.IProximityDetectionData" Collapsed="true">
+    <Position X="0.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACSAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IProximityDetectionData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
