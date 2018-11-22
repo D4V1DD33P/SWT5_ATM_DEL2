@@ -1793,11 +1793,10 @@
       ]
     },
     "System.Linq.Queryable/4.3.0": {
-      "sha512": "XeuhzDnMp4nqUkeW4c5ILsKQk4+15RVaHm8LQdKWiGqIAgC12y2vuJUkkNhqjqi3K6LNmV9tzEfAZrarwWMsKA==",
+      "sha512": "In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
       "type": "package",
       "path": "system.linq.queryable/4.3.0",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -3110,23 +3109,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hurtig navn\\.nuget\\packages\\": {},
+    "C:\\Users\\Ejer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Ejer\\Desktop\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "packagesPath": "C:\\Users\\Hurtig navn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hurtig navn\\Desktop\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Ejer\\Desktop\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "packagesPath": "C:\\Users\\Ejer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ejer\\Desktop\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hurtig navn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ejer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
