@@ -53,7 +53,7 @@ namespace ATMLibrary
         public void LeftAirspace(List<ITrackData> trackInfo)
         {
             //List<ITrackData> leftTracks = new List<ITrackData>();
-            foreach (var track in tracInfo)
+            foreach (var track in new ITrackData[])Info)
             {
                 if (track.X <= _minX || track.X >= _maxX || track.Y <= _minY || track.Y >= _maxY)
                 {
