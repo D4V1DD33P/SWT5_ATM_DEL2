@@ -1,7 +1,7 @@
 ﻿using System;
 using TransponderReceiver;
 using ATMLibrary.Interfaces;
-using  ATMLibrary;
+using ATMLibrary;
 
 
 namespace AirTrafficMonitoring

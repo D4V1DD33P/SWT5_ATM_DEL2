@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using TransponderReceiver;
 
 namespace ATMLibrary
@@ -43,7 +44,8 @@ namespace ATMLibrary
                 listOfTracks.Add(Parsing(data));
             }
             _filter.ConfirmTracks(listOfTracks);
-            //_filter.LeftAirspace(listOfTracks);
+            //Thread.Sleep(5000);  
+            _filter.LeftAirspace(listOfTracks);
         }
     }
 }
