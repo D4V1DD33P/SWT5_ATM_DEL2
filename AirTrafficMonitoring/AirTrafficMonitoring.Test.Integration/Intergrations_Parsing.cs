@@ -96,5 +96,20 @@ namespace AirTrafficMonitoring.Test.Integration
             _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Y == 85634));
         }
 
+        [Test]
+        public void ValidTracks_EventRaised_Correct_AltitudeReceived()
+        {
+            FakeEventRaised();
+            _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Altitude == 17000));
+        }
+
+        [Test]
+        public void ValidTracks_EventRaised_Correct_TimeStampYearReceived()
+        {
+            FakeEventRaised();
+            _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Timestamp.Year == 2018));
+        }
+
+
     }
 }
