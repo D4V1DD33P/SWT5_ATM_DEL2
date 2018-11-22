@@ -7,17 +7,17 @@ namespace ATMLibrary
 {
    public class UpdateTrack : IUpdateTrack
     {
-        public List<ITrackData> oldList { get; set; }
+        public List<ITrackData> OldList { get; set; }
         private ITrackData _renderTrack;   
         private IDetectVicinity _vicinity;
         
 
-        public double timespan { get; set; }
+        public double TimeSpan { get; set; }
         public UpdateTrack(ITrackData renderTrack, IDetectVicinity vicinity)
         {
             _renderTrack = renderTrack;
             _vicinity = vicinity;
-            oldList = new List<ITrackData>();
+            OldList = new List<ITrackData>();
         }
      
 
@@ -25,10 +25,10 @@ namespace ATMLibrary
         {
             foreach (var newTrack in newList)
             {
-                if (!oldList.Any())
+                if (!OldList.Any())
                     break;
 
-                foreach (var oldTrack in oldList)
+                foreach (var oldTrack in OldList)
                 {
                     if (newTrack.Tag == oldTrack.Tag)
                     {
@@ -38,11 +38,11 @@ namespace ATMLibrary
                 }
             }
 
-            oldList.Clear();
+            OldList.Clear();
 
             foreach (var trackData in newList)
             {
-                oldList.Add(trackData);
+                OldList.Add(trackData);
             }
 
             _renderTrack.Print(newList);
@@ -52,7 +52,7 @@ namespace ATMLibrary
         public int CalSpeed(ITrackData track1, ITrackData track2)
         {
             TimeSpan time = track2.Timestamp - track1.Timestamp;
-            timespan = (double)time.TotalSeconds;
+            TimeSpan = (double)time.TotalSeconds;
 
             double dX = 0;
             double dY = 0;
@@ -78,13 +78,13 @@ namespace ATMLibrary
 
             double distance = Math.Sqrt(Math.Pow(dX, 2) + Math.Pow(dY, 2));
 
-            if (timespan < 0)
+            if (TimeSpan < 0)
             {
-                timespan = timespan * -1;
-                speed = distance / timespan;
+                TimeSpan = TimeSpan * -1;
+                speed = distance / TimeSpan;
             }
-            else if (timespan > 0)
-            { speed = distance / timespan; }
+            else if (TimeSpan > 0)
+            { speed = distance / TimeSpan; }
 
             return (int)speed;
         }

@@ -62,9 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Intergrations_FilterData.cs" />
-    <Compile Include="Intergrations_Parsing.cs" />
-    <Compile Include="Intergrations_TrackUpdate.cs" />
+    <Compile Include="Integrations_FilterData.cs" />
+    <Compile Include="Integrations_Parsing.cs" />
+    <Compile Include="Integrations_TrackUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

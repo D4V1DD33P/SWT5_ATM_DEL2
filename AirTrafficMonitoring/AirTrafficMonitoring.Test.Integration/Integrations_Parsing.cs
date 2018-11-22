@@ -60,7 +60,6 @@ namespace AirTrafficMonitoring.Test.Integration
             _transponderReceiver.TransponderDataReady += Raise.EventWith(_dataEvent);
         }
 
-
         [Test]
         public void ValidTracks_EventRaised_CorrectTrackCount()
         {
@@ -68,8 +67,6 @@ namespace AirTrafficMonitoring.Test.Integration
             _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data.Count == 1));
 
         }
-
-
 
         [Test]
         public void ValidTracks_EventRaised_CorrectTrackTagName()
@@ -80,14 +77,12 @@ namespace AirTrafficMonitoring.Test.Integration
 
         }
 
-
         [Test]
         public void ValidTracks_EventRaised_CorrectXValueReceived()
         {
             FakeEventRaised();
             _trackData.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].X == 53241));
         }
-
 
         [Test]
         public void ValidTracks_EventRaised_CorrectYValueReceived()
