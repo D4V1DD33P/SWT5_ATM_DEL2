@@ -17,7 +17,6 @@ namespace ATMLibrary
 
         //public FilterData()
         //{
-            
         //}
 
         public FilterData(IUpdateTrack trackUpdate)
