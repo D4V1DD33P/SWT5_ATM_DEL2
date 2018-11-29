@@ -30,8 +30,8 @@ namespace AirTrafficMonitoring.Test.Unit
                 _track1 = Substitute.For<ITrackData>();
                 _track2 = Substitute.For<ITrackData>();
 
-                _track1.Timestamp.Returns(new DateTime(2018, 05, 13, 10, 50, 35));
-                _track2.Timestamp.Returns(new DateTime(2018, 05, 13, 10, 20, 31));
+                _track1.Timestamp.Returns(new DateTime(2018, 5, 13, 10, 50, 35));
+                _track2.Timestamp.Returns(new DateTime(2018, 5, 13, 10, 20, 31));
 
 
             }
