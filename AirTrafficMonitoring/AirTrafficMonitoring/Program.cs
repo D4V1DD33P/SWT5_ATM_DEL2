@@ -10,7 +10,6 @@ namespace AirTrafficMonitoring
     {
         static void Main(/*string[] args*/)
         {
-            string str = "Vent... ";
             ITransponderReceiver transponderDataReceiver = TransponderReceiverFactory.CreateTransponderDataReceiver();
 
 
@@ -24,7 +23,7 @@ namespace AirTrafficMonitoring
 
             var decoder = new ParseData(transponderDataReceiver, filtering);
 
-            Console.WriteLine(str);
+            Console.WriteLine("Wait a moment...");
             Console.ReadLine();
         }
     }
