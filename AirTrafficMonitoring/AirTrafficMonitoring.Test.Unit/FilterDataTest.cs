@@ -4,8 +4,6 @@ using ATMLibrary.Interfaces;
 using NUnit.Framework;
 using NSubstitute;
 
-
-
 namespace AirTrafficMonitoring.Test.Unit
 {
     [TestFixture]

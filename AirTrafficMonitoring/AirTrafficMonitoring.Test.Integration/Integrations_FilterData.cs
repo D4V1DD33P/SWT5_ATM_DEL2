@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using ATMLibrary;
 using ATMLibrary.Interfaces;
@@ -44,25 +45,38 @@ namespace AirTrafficMonitoring.Test.Integration
                 Altitude = 12000,
                 Course = 0,
                 Timestamp = new DateTime(2016, 05, 13, 10, 50, 35),
-                Speed = 0
+                Speed = 141
+            };
+
+            _creatingFakeTrackData2 = new TrackData
+            {
+                Tag = "DEEP401",
+                X = 50000,
+                Y = 50000,
+                Altitude = 12000,
+                Course = 0,
+                Timestamp = new DateTime(2018, 10, 13, 10, 50, 35),
+                Speed = 141
             };
 
         }
 
-
         [Test]
         public void ValidateTracks_ValidTracks_PrintsCalculatedVelocity()
         {
+            _creatingFakeTrackDataList.Clear();
             //Adds fake data to list
             _creatingFakeTrackDataList.Add(_creatingFakeTrackData1);
             _filteringData.ConfirmTracks(_creatingFakeTrackDataList);
 
-            _creatingFakeTrackDataList.Clear();
-            _creatingFakeTrackDataList.Add(_creatingFakeTrackData2);
+            _trackDataRendition.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Tag == "JAS002" && data[0].Speed == (int)141));
 
+            _creatingFakeTrackDataList.Clear();
+
+            _creatingFakeTrackDataList.Add(_creatingFakeTrackData2);
             _filteringData.ConfirmTracks(_creatingFakeTrackDataList);
 
-            _trackDataRendition.Received().Print(Arg.Is<List<ITrackData>>(data => data[0].Tag == "JAS002" && data[0].Speed == (int)141));
+            _trackDataRendition.Received().Print(Arg.Is<List<ITrackData>>(data => data[1].Tag == "DEEP401" && data[1].Speed == (int)141));
         }
     }
 }
