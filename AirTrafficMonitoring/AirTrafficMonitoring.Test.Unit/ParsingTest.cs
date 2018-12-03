@@ -51,5 +51,20 @@ namespace AirTrafficMonitoring.Test.Unit
             _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Tag == "JAS001"));
 
         }
+
+        [Test]
+        public void OneTrackInList_XCorrect()
+        {
+            RaiseFakeEvent();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].X == 12345));
+        }
+
+
+        [Test]
+        public void OneTrackInList_YCorrect()
+        {
+            RaiseFakeEvent();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Y == 67890));
+        }
     }
 }
