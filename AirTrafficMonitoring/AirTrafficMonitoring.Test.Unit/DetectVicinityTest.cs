@@ -11,6 +11,8 @@ namespace AirTrafficMonitoring.Test.Unit
     {
         private IDetectVicinity _uut;
         private List<ITrackData> _dataListTrackData;
+
+        private List<IVicinityData> _proximityDetections;
         private ITrackData _track1, _track2;
         private IVicinityData _renderEvent;
         private IVicinityData _vicinityData;
@@ -19,8 +21,10 @@ namespace AirTrafficMonitoring.Test.Unit
         public void SetUp()
         {
             _dataListTrackData = new List<ITrackData>();
-            _vicinityData = new VicinityData(); 
+            _vicinityData = new VicinityData();
             _renderEvent = Substitute.For<IVicinityData>();
+            _proximityDetections = Substitute.For<List<IVicinityData>>();
+
             _uut = new DetectVicinity(_renderEvent, _vicinityData);
 
             _track1 = new TrackData
@@ -60,6 +64,31 @@ namespace AirTrafficMonitoring.Test.Unit
             _renderEvent.Received().LogToFile(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
 
         }
+
+        [Test]
+        public void CheckProximityDetection_CollisionCountIsOne()
+        {
+
+
+            _track1.Tag = "ABC123";
+            _track2.Tag = "123ABC";
+            _track1.X = 30000;
+            _track2.X = 30050;
+            _track1.Y = 50000;
+            _track2.Y = 50050;
+            _track1.Altitude = 5000;
+            _track2.Altitude = 5050;
+
+            _dataListTrackData.Add(_track1);
+            _dataListTrackData.Add(_track2);
+
+
+            _uut.CheckVicinity(_dataListTrackData);
+
+            Assert.That(_proximityDetections.Count, Is.EqualTo(0));
+
+        }
+
 
     }
 }
