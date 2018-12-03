@@ -139,3 +139,14 @@ C:\Users\Hurtig navn\Desktop\SWT_ATM_PART2\AirTrafficMonitoring\ATMLibrary\obj\D
 C:\Users\Hurtig navn\Desktop\SWT_ATM_PART2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
 C:\Users\Hurtig navn\Desktop\SWT_ATM_PART2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb
 C:\Users\Danny\OneDrive - Aarhus universitet\4. Semester\I4SWT\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csprojAssemblyReference.cache
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.deps.json
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\ATMLibrary.pdb
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\bin\Debug\netstandard2.0\TransponderReceiver.dll
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csprojAssemblyReference.cache
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfoInputs.cache
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.AssemblyInfo.cs
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.csproj.CopyComplete
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.dll
+C:\Users\Ejer\Desktop\Skole\4. Semester\I4SWT\Handin\Handin_3\Os\SWT_3\SWT5_ATM_DEL2\AirTrafficMonitoring\ATMLibrary\obj\Debug\netstandard2.0\ATMLibrary.pdb

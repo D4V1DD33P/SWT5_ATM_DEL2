@@ -49,5 +49,17 @@ namespace AirTrafficMonitoring.Test.Unit
             _renderEvent.Received()
             .PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
         }
+
+        [Test]
+        public void CheckProcximityDetection_SeperationValid_IsCorrect()
+        {
+            _dataListTrackData.Add(_track1);
+            _dataListTrackData.Add(_track2);
+            _uut.CheckVicinity(_dataListTrackData);
+
+            _renderEvent.Received().LogToFile(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
+
+        }
+
     }
 }
