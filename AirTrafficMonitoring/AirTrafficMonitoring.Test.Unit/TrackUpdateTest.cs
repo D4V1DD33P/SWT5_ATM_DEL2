@@ -53,8 +53,6 @@ namespace AirTrafficMonitoring.Test.Unit
                 Assert.That(_trackData[0].Timestamp, Is.EqualTo(uut.OldList[0].Timestamp)); //New list is equal to OldList
             }
 
-
-            //Test with Data[1]
             [Test]
             public void Update_TimeStamp()
             {
@@ -65,5 +63,19 @@ namespace AirTrafficMonitoring.Test.Unit
                 uut.Update(_trackData);   //new list
                 Assert.That(_trackData[1].Timestamp, Is.EqualTo(uut.OldList[1].Timestamp));  // Still works with data[1]
             }
+
+        [Test]
+        public void Update_VelocityOldandNew_returnsEqual()
+        {
+
+            var uut = new UpdateTrack(_trackRendition, _detectVicinity);
+            _trackData.Add(_track1);
+            _trackData.Add(_track2);
+
+            uut.Update(_trackData);                     //new list
+            Assert.That(_trackData[0].Altitude, Is.EqualTo(uut.OldList[0].Altitude));
         }
+
+
+    }
 }

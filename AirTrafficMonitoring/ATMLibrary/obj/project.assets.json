@@ -1282,10 +1282,12 @@
       ]
     },
     "System.Diagnostics.TraceSource/4.3.0": {
-      "sha512": "VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "sha512": "PXWAEqWXamctxvdYSlHY+HG0e++cVkg0FwiqtiOZ4Ziy31GD9uab2QAgkuDKUARcCdVq3DfruvdMnPfalEJbNw==",
       "type": "package",
       "path": "system.diagnostics.tracesource/4.3.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3116,23 +3118,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ejer\\.nuget\\packages\\": {},
+    "C:\\Users\\Danny\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ejer\\Desktop\\Skole\\4. Semester\\I4SWT\\Handin\\Handin_3\\Os\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
       "projectName": "ATMLibrary",
-      "projectPath": "C:\\Users\\Ejer\\Desktop\\Skole\\4. Semester\\I4SWT\\Handin\\Handin_3\\Os\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
-      "packagesPath": "C:\\Users\\Ejer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ejer\\Desktop\\Skole\\4. Semester\\I4SWT\\Handin\\Handin_3\\Os\\SWT_3\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\ATMLibrary.csproj",
+      "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danny\\OneDrive - Aarhus universitet\\4. Semester\\I4SWT\\SWT5_ATM_DEL2\\AirTrafficMonitoring\\ATMLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ejer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
