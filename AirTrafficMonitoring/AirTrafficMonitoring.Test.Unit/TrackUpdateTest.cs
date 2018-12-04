@@ -106,5 +106,24 @@ namespace AirTrafficMonitoring.Test.Unit
 
                 Assert.AreNotEqual(vel, uut.OldList[0].Speed);
             }
+
+        [Test]
+            public void TrackRendition_IsCalled_True()
+            {
+                var uut = new UpdateTrack(_trackRendition, _detectVicinity);
+                uut.Update(_trackData);
+
+                _trackRendition.Received().Print(_trackData);
+            }
+
+            [Test]
+            public void ProximityDetection_IsCalled_True()
+            {
+                var uut = new UpdateTrack(_trackRendition, _detectVicinity);
+                uut.Update(_trackData);
+
+                _detectVicinity.Received().CheckVicinity(_trackData);
+            }
+
     }
 }

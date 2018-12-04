@@ -65,5 +65,27 @@ namespace AirTrafficMonitoring.Test.Unit
             RaiseFakeEvent();
             _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Y == 67890));
         }
+
+        [Test]
+        public void ThreeTracksInList_CountCorrect()
+        {
+            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
+            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
+            RaiseFakeEvent();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x.Count == 3));
+
+        }
+
+        [Test]
+        public void ThreeTracksInList_ThirdTagCorrect()
+        {
+            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
+            _fakeTransponderDataEventArgs.TransponderData.Add("JAS003;12345;67890;12000;20160101100909111");
+            RaiseFakeEvent();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[2].Tag == "JAS003"));
+
+
+        }
+
     }
 }
