@@ -10,7 +10,6 @@ namespace AirTrafficMonitoring.Test.Unit
 {
 
     [TestFixture]
-
     class ParsingTest
     {
 

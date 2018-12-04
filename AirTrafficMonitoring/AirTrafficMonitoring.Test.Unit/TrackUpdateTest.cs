@@ -76,6 +76,35 @@ namespace AirTrafficMonitoring.Test.Unit
             Assert.That(_trackData[0].Altitude, Is.EqualTo(uut.OldList[0].Altitude));
         }
 
+            [Test]
+            public void Update_VelocityOldandNew_returnsNotEqual()
+            {
 
+                var uut = new UpdateTrack(_trackRendition, _detectVicinity);
+                _track1.Timestamp.Returns(new DateTime(2018, 05, 13, 10, 50, 30));
+                _track1.X.Returns(58000);
+                _track1.Y.Returns(67000);
+                _track1.Tag.Returns("SHN63");
+
+
+                _trackData.Add(_track1);
+
+                uut.Update(_trackData);         //new list SHN63 og old list SHN63
+
+                // _trackData.Clear();
+
+                _track2.Timestamp.Returns(new DateTime(2018, 05, 13, 10, 50, 36));
+                _track2.X.Returns(65000);
+                _track2.Y.Returns(71000);
+                _track2.Tag.Returns("SHN63");
+
+
+
+                _trackData.Add(_track2);
+                var vel = new UpdateTrack(_trackRendition, _detectVicinity).CalSpeed(_track1, _track2);
+                uut.Update(_trackData);
+
+                Assert.AreNotEqual(vel, uut.OldList[0].Speed);
+            }
     }
 }
