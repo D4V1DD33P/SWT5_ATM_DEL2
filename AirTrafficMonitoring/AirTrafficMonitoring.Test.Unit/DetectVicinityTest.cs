@@ -12,8 +12,8 @@ namespace AirTrafficMonitoring.Test.Unit
         private IDetectVicinity _uut;
         private List<ITrackData> _dataListTrackData;
 
-        private List<IVicinityData> _proximityDetections;
-        private ITrackData _track1, _track2, _track3;
+        private List<IVicinityData> _VicinityDetections;
+        private ITrackData _testtrack1, _testtrack2, _testtrack3;
         private IVicinityData _renderEvent;
         private IVicinityData _vicinityData;
 
@@ -23,11 +23,11 @@ namespace AirTrafficMonitoring.Test.Unit
             _dataListTrackData = new List<ITrackData>();
             _vicinityData = new VicinityData();
             _renderEvent = Substitute.For<IVicinityData>();
-            _proximityDetections = Substitute.For<List<IVicinityData>>();
+            _VicinityDetections = Substitute.For<List<IVicinityData>>();
 
             _uut = new DetectVicinity(_renderEvent, _vicinityData);
 
-            _track1 = new TrackData
+            _testtrack1 = new TrackData
             {
                 Tag = "DEEP401",
                 X = 10050,
@@ -35,7 +35,7 @@ namespace AirTrafficMonitoring.Test.Unit
                 Altitude = 1000,
             };
 
-            _track2 = new TrackData
+            _testtrack2 = new TrackData
             {
                 Tag = "401DEEP",
                 X = 15000,
@@ -43,7 +43,7 @@ namespace AirTrafficMonitoring.Test.Unit
                 Altitude = 1200,
             };
 
-            _track3 = new TrackData
+            _testtrack3 = new TrackData
             {
                 Tag = "402DEEP",
                 X = 15000,
@@ -55,18 +55,18 @@ namespace AirTrafficMonitoring.Test.Unit
         [Test]
         public void ConfirmTracksCorrectTagPrinted()
         {
-            _dataListTrackData.Add(_track1);
-            _dataListTrackData.Add(_track2);
+            _dataListTrackData.Add(_testtrack1);
+            _dataListTrackData.Add(_testtrack2);
             _uut.CheckVicinity(_dataListTrackData);
             _renderEvent.Received()
             .PrintEvent(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
         }
 
         [Test]
-        public void CheckProcximityDetection_SeperationValid_IsCorrect()
+        public void CheckVicinityDetectionData_ValidSepereation()
         {
-            _dataListTrackData.Add(_track1);
-            _dataListTrackData.Add(_track2);
+            _dataListTrackData.Add(_testtrack1);
+            _dataListTrackData.Add(_testtrack2);
             _uut.CheckVicinity(_dataListTrackData);
 
             _renderEvent.Received().LogToFile(Arg.Is<List<IVicinityData>>(data => data[0].TagOne == "401DEEP" && data[0].TagTwo == "DEEP401"));
@@ -75,53 +75,39 @@ namespace AirTrafficMonitoring.Test.Unit
 
         // de to kommende test er ikke helt som ønsket :/
         [Test]
-        public void CheckProximityDetection_CollisionCountIsOne()
+        public void CheckVicinityDetectionData_CollisionCountIsZero()
         {
 
 
-            _track1.Tag = "ABC123";
-            _track2.Tag = "123ABC";
-            _track1.X = 30000;
-            _track2.X = 30050;
-            _track1.Y = 50000;
-            _track2.Y = 50050;
-            _track1.Altitude = 5000;
-            _track2.Altitude = 5050;
+            _testtrack1.X = 40000;
+            _testtrack2.X = 40050;
+            _testtrack1.Y = 60000;
+            _testtrack2.Y = 60050;
+            _testtrack1.Altitude = 6000;
+            _testtrack2.Altitude = 6050;
 
-            _dataListTrackData.Add(_track1);
-            _dataListTrackData.Add(_track2);
+            _dataListTrackData.Add(_testtrack1);
+            _dataListTrackData.Add(_testtrack2);
 
 
             _uut.CheckVicinity(_dataListTrackData);
 
-            Assert.That(_proximityDetections.Count, Is.EqualTo(0));
+            Assert.That(_VicinityDetections.Count, Is.EqualTo(0));
 
         }
 
         [Test]
-        public void CheckProximityDetection_CollisionCountIsOne_withThreeTracks()
+        public void CheckVicinityDetection_CollisionCount_ThreeTracks_IsZero()
         {
 
-            _track1.Tag = "ART123";
-            _track2.Tag = "THF334";
-            _track1.X = 30000;
-            _track2.X = 30050;
-            _track1.Y = 50000;
-            _track2.Y = 50050;
-            _track1.Altitude = 5000;
-            _track2.Altitude = 5050;
-            _track3.X = 50000;
-            _track3.Y = 70000;
-            _track3.Altitude = 3000;
-
-            _dataListTrackData.Add(_track1);
-            _dataListTrackData.Add(_track2);
-            _dataListTrackData.Add(_track3);
+            _dataListTrackData.Add(_testtrack1);
+            _dataListTrackData.Add(_testtrack2);
+            _dataListTrackData.Add(_testtrack3);
 
 
             _uut.CheckVicinity(_dataListTrackData);
 
-            Assert.That(_proximityDetections.Count, Is.EqualTo(0));
+            Assert.That(_VicinityDetections.Count, Is.EqualTo(0));
 
         }
 

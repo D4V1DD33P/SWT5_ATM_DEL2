@@ -46,7 +46,7 @@ namespace AirTrafficMonitoring.Test.Unit
         }
 
         [Test]
-        public void ValidateTracks_TracksNotInArea_IsCorrect()
+        public void ConfirmTracks_NotInArea_IsCorrect()
         {
             _fakeTrackDataList.Add(_InvalidFakeTrackData);
 

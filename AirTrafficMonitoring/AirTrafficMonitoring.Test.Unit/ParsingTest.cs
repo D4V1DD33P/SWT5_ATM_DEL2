@@ -26,65 +26,63 @@ namespace AirTrafficMonitoring.Test.Unit
             _filtering = Substitute.For<IFilterData>();
             _uut = new ParseData(_receiver, _filtering);
             _fakeTransponderDataEventArgs = new RawTransponderDataEventArgs(new List<string>()
-                { "JAS001;12345;67890;12000;20160101100909111" });
+                { "DEE001;67892;67890;12000;20160101100909111" });
 
         }
 
-        private void RaiseFakeEvent()
+        private void FakeEventRaised()
         {
             _receiver.TransponderDataReady += Raise.EventWith(_fakeTransponderDataEventArgs);
         }
 
         [Test]
-        public void OneTrackInList_CountCorrect()
+        public void TrackInList_withOne_CorrectCount()
         {
-            RaiseFakeEvent();
+            FakeEventRaised();
             _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x.Count == 1));
         }
 
         //Test af tag
         [Test]
-        public void OneTrackInList_TagCorrect()
+        public void TrackInList_withOne_CorrectTag()
         {
-            RaiseFakeEvent();
-            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Tag == "JAS001"));
+            FakeEventRaised();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Tag == "DEE001"));
 
         }
 
         [Test]
-        public void OneTrackInList_XCorrect()
+        public void TrackInList_withOne_CorrectX()
         {
-            RaiseFakeEvent();
-            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].X == 12345));
+            FakeEventRaised();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].X == 67892));
         }
 
 
         [Test]
-        public void OneTrackInList_YCorrect()
+        public void TrackInList_withOne_CorrectY()
         {
-            RaiseFakeEvent();
+            FakeEventRaised();
             _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[0].Y == 67890));
         }
 
         [Test]
-        public void ThreeTracksInList_CountCorrect()
+        public void TrackInList_withThree_CorrectCount()
         {
-            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
-            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
-            RaiseFakeEvent();
+            _fakeTransponderDataEventArgs.TransponderData.Add("DEE001;67892;67890;12000;20160101100909111");
+            _fakeTransponderDataEventArgs.TransponderData.Add("DEE001;67892;67890;12000;20160101100909111");
+            FakeEventRaised();
             _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x.Count == 3));
 
         }
 
         [Test]
-        public void ThreeTracksInList_ThirdTagCorrect()
+        public void TrackInList_withThree_CorrectTag()
         {
-            _fakeTransponderDataEventArgs.TransponderData.Add("JAS002;12345;67890;12000;20160101100909111");
-            _fakeTransponderDataEventArgs.TransponderData.Add("JAS003;12345;67890;12000;20160101100909111");
-            RaiseFakeEvent();
-            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[2].Tag == "JAS003"));
-
-
+            _fakeTransponderDataEventArgs.TransponderData.Add("DEE001;67892;67890;12000;20160101100909111");
+            _fakeTransponderDataEventArgs.TransponderData.Add("DEE003;67892;67890;12000;20160101100909111");
+            FakeEventRaised();
+            _filtering.Received().ConfirmTracks(Arg.Is<List<ITrackData>>(x => x[2].Tag == "DEE003"));
         }
 
     }
