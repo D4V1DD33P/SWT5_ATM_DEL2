@@ -13,7 +13,7 @@ namespace AirTrafficMonitoring.Test.Unit
         private List<ITrackData> _dataListTrackData;
 
         private List<IVicinityData> _proximityDetections;
-        private ITrackData _track1, _track2;
+        private ITrackData _track1, _track2, _track3;
         private IVicinityData _renderEvent;
         private IVicinityData _vicinityData;
 
@@ -42,6 +42,14 @@ namespace AirTrafficMonitoring.Test.Unit
                 Y = 10000,
                 Altitude = 1200,
             };
+
+            _track3 = new TrackData
+            {
+                Tag = "402DEEP",
+                X = 15000,
+                Y = 10000,
+                Altitude = 1200,
+            };
         }
 
         [Test]
@@ -65,6 +73,7 @@ namespace AirTrafficMonitoring.Test.Unit
 
         }
 
+        // de to kommende test er ikke helt som ønsket :/
         [Test]
         public void CheckProximityDetection_CollisionCountIsOne()
         {
@@ -89,6 +98,32 @@ namespace AirTrafficMonitoring.Test.Unit
 
         }
 
+        [Test]
+        public void CheckProximityDetection_CollisionCountIsOne_withThreeTracks()
+        {
+
+            _track1.Tag = "ART123";
+            _track2.Tag = "THF334";
+            _track1.X = 30000;
+            _track2.X = 30050;
+            _track1.Y = 50000;
+            _track2.Y = 50050;
+            _track1.Altitude = 5000;
+            _track2.Altitude = 5050;
+            _track3.X = 50000;
+            _track3.Y = 70000;
+            _track3.Altitude = 3000;
+
+            _dataListTrackData.Add(_track1);
+            _dataListTrackData.Add(_track2);
+            _dataListTrackData.Add(_track3);
+
+
+            _uut.CheckVicinity(_dataListTrackData);
+
+            Assert.That(_proximityDetections.Count, Is.EqualTo(0));
+
+        }
 
     }
 }
